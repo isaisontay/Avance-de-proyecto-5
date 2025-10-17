@@ -94,19 +94,26 @@ def ordenar_insercion():
         cursos[j+1] = key
     print("Cursos ordenados por nota (inserción)\n")
 
+# === MENÚ PRINCIPAL ===
 while True:
-    print("1. Agregar curso")
-    print("2. Ver cursos")
-    print("3. Calcular promedio")
-    print("4. Buscar curso")
-    print("5. Eliminar curso")
-    print("6. Ver historial (Pila)")
-    print("7. Revisar cola")
-    print("8. Ordenar burbuja")
-    print("9. Ordenar inserción")
-    print("10. Salir")
-    opcion = input("Elige una opción: ")
+    print("================================")
+    print("===== Gestor de notas academicas =====")
+    print("1. Registrar nuevo curso")
+    print("2. Mostrar todos los cursos y notas")
+    print("3. Calcular promedio general")
+    print("4. Contar cursos aprobados y reprobados")
+    print("5. Buscar curso por nombre (búsqueda lineal)")
+    print("6. Actualizar nota de un curso")
+    print("7. Eliminar un curso")
+    print("8. Ordenar cursos por nota (ordenamiento burbuja)")
+    print("9. Ordenar cursos por nombre (ordenamiento inserción)")
+    print("10. Buscar curso por nombre (búsqueda binaria)")
+    print("11. Simular cola de solicitudes de revisión")
+    print("12. Mostrar historial de cambios (pila)")
+    print("13. Salir")
+    opcion = input("Seleccione una opción: ")
     print()
+
     if opcion == "1":
         agregar_curso()
     elif opcion == "2":
@@ -114,19 +121,26 @@ while True:
     elif opcion == "3":
         calcular_promedio()
     elif opcion == "4":
-        buscar_curso()
+        print("Función aún no implementada.\n")
     elif opcion == "5":
-        eliminar_curso()
+        buscar_curso()
     elif opcion == "6":
-        ver_historial()
+        print("Función aún no implementada.\n")
     elif opcion == "7":
-        revisar_cola()
+        eliminar_curso()
     elif opcion == "8":
         ordenar_burbuja()
     elif opcion == "9":
         ordenar_insercion()
     elif opcion == "10":
-        print("Adios!")
+        print("Función aún no implementada.\n")
+    elif opcion == "11":
+        revisar_cola()
+    elif opcion == "12":
+        ver_historial()
+    elif opcion == "13":
+        print("¡Hasta luego!\n")
         break
     else:
         print("Opción no válida\n")
+
